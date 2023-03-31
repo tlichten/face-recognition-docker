@@ -16,6 +16,7 @@ module.exports = async function (req, res, next) {
             });
         }
         else {
+            console.log('Parsed file from req.file was not of type Buffer');
             throw 'Parsed file from req.file was not of type Buffer';
         }
     }
